@@ -20,8 +20,6 @@ import net.minecraft.util.ResourceLocation;
 
 public class ModMap extends ModDraggable{
 	public static final ResourceLocation MAP_IMAGE = new ResourceLocation("clientname/kdmap.png");
-	//"https://mc-heads.net/avatar/Telie"+ 
-	//public drawIgm() {
 	public int width;
 	private Minecraft minecraft;
 	private ResourceLocation img = null;
@@ -41,13 +39,11 @@ public class ModMap extends ModDraggable{
 
 	@Override
 	public int getWidth() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
 	public int getHeight() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
@@ -57,9 +53,6 @@ public class ModMap extends ModDraggable{
 		if(mapToggle) {
 			drawImg(0,0,false,MAP_IMAGE);
 			drawHead(calculateX(), calculateY());
-			//mapToggle=!mapToggle;
-			//this.mc.getTextureManager().bindTexture(new ResourceLocation("clientname/defaultbackground.png"));
-			//Gui.drawScaledCustomSizeModalRect(0, 0, 0, 0, this.width, this.height, this.width, this.height, this.width, this.height);
 		}
 	}
 	private void drawImg(int x,int y,boolean lower,ResourceLocation texture) {
