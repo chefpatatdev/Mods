@@ -21,20 +21,13 @@ public class ModXYZ extends ModDraggable{
 	@Override
 	public void render(ScreenPosition pos) {
 		// TODO Auto-generated method stub
-		font.drawString("§dX: "+String.format("§f%.1f",mc.getRenderViewEntity().posX) +"   "+getDir(mc), pos.getAbsoluteX(), pos.getAbsoluteY()+0, -1);
-		font.drawString("§dY: "+String.format("§f%.1f",mc.getRenderViewEntity().getEntityBoundingBox().minY), pos.getAbsoluteX(), pos.getAbsoluteY()+16, -1);
-		font.drawString("§dZ: "+String.format("§f%.1f",mc.getRenderViewEntity().posZ), pos.getAbsoluteX(), pos.getAbsoluteY()+32, -1);
+		font.drawString("Â§dX: "+String.format("Â§f%.1f",mc.getRenderViewEntity().posX) +"   "+getDir(mc), pos.getAbsoluteX(), pos.getAbsoluteY()+0, -1);
+		font.drawString("Â§dY: "+String.format("Â§f%.1f",mc.getRenderViewEntity().getEntityBoundingBox().minY), pos.getAbsoluteX(), pos.getAbsoluteY()+16, -1);
+		font.drawString("Â§dZ: "+String.format("Â§f%.1f",mc.getRenderViewEntity().posZ), pos.getAbsoluteX(), pos.getAbsoluteY()+32, -1);
 	}
 
-	/*private String getXYZString() {
-		// TODO Auto-generated method stub
-		return String.format("X: %.3f \nY: %.3f \nZ: %.3f", mc.getRenderViewEntity().posX,mc.getRenderViewEntity().getEntityBoundingBox().minY,mc.getRenderViewEntity().posZ);
-	}*/
 	private String getDir(Minecraft minecraft) {
-        
-        //Fix by Eric
-        //Some people I garentee will call this when the player is null and their game will crash
-        //Should save some frustration on both ends :)
+
         if(minecraft == null || minecraft.player == null){
             return "";
         }
