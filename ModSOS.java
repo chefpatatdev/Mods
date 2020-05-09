@@ -17,9 +17,6 @@ public class ModSOS {
 	}
 	private static String getDir(Minecraft minecraft) {
         
-        //Fix by Eric
-        //Some people I garentee will call this when the player is null and their game will crash
-        //Should save some frustration on both ends :)
         if(minecraft == null || minecraft.player == null){
             return "";
         }
