@@ -1,22 +1,3 @@
-/*package clientname.mods.impl;
-
-import net.minecraft.client.Minecraft;
-
-public class Modfullbright{
-	private Minecraft mc;
-	private  static boolean fullbrighttoggle = true;
-
-
-	public static void toggleFullBright() {		
-				fullbrighttoggle = !fullbrighttoggle;
-				fullbright(fullbrighttoggle);	
-		
-	}
-	private static void fullbright(boolean fullbrighttoggle){
-		  Minecraft.getMinecraft().gameSettings.gammaSetting = (fullbrighttoggle ? 200 : 0);
-		}
-	
-}*/
 package clientname.mods.impl;
 
 import clientname.gui.guiscrollable.GuiCheckBox;
@@ -36,7 +17,6 @@ public class ModFullbright extends ModDraggable{
 
 	@Override
 	public int getHeight() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
@@ -51,9 +31,6 @@ public class ModFullbright extends ModDraggable{
 	public void renderDummy(ScreenPosition pos) {
 	
 	
-	}
-	public static  String test(){
-		return "test";
 	}
 }
 
