@@ -13,7 +13,6 @@ public class ModFPS extends ModDraggable{
 
 	@Override
 	public int getHeight() {
-		// TODO Auto-generated method stub
 		return font.FONT_HEIGHT;
 	}
 
